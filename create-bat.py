@@ -1,13 +1,13 @@
 import os
 
-title = "Shadow-Slave"
+title = "The-Beginning-After-The-End"
 
 md_files = [f for f in os.listdir("chapters") if f.endswith(".md")]
 
 md_files.sort(key=lambda x: int(x.split(".")[0]))
 
 pandoc_command = (
-    f"cd chapters && pandoc --epub-cover-image ./info/cover.jpg -o ../epubs/{title}.epub ./info/title.txt "
+    f"cd chapters && pandoc -o ../epubs/{title}.epub ./info/metadata.txt "
     + " ".join(md_files)
 )
 

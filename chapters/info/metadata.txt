@@ -1,0 +1,6 @@
+---
+title: The Beginning After The End (Web Novel)
+creator: TurtleMe
+cover-image: ./info/cover.jpg
+lang: en
+...
